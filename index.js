@@ -12,7 +12,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://recipe-app-backend-natp.onrender.com/",
     optionsSuccessStatus: 200,
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"],
