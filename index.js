@@ -27,6 +27,10 @@ app.use("/recipes", RecipesRouter);
 
 db();
 
+app.get('/', (req, res) => {
+  res.send("Welcome To Recipe App!!!")
+})
+
 const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => {
