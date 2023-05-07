@@ -10,15 +10,8 @@ const RecipesRouter = require("./routes/Recipes");
 
 const app = express();
 
-app.use(
-  cors({
-    origin: "https://recipe-app-backend-natp.onrender.com/",
-    optionsSuccessStatus: 200,
-    credentials: true,
-    allowedHeaders: ["Content-Type", "Authorization"],
-  })
-);
 app.use(express.json());
+app.use(cors());
 
 
 app.use("/auth", userRouter);
